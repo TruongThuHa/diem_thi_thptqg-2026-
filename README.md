@@ -1,5 +1,17 @@
 # Điểm thi THPT Quốc gia 2026
+> **Based on [duongtrongnguyen123/diem-thi-thptqg-2026](https://github.com/duongtrongnguyen123/diem-thi-thptqg-2026).** The scraper, build script and dataset are the original author's work. My contribution is `scripts/prep_diemthi_2026.py`.
+>
+> **Dựa trên repo gốc của duongtrongnguyen123.** Scraper, script build và bộ dữ liệu là của tác giả gốc; dữ liệu CSV chỉ có ở repo gốc. Phần tôi đóng góp là `scripts/prep_diemthi_2026.py`.
 
+## Phần tôi đóng góp / What I added
+
+`scripts/prep_diemthi_2026.py`: script pandas biến file CSV gộp thành file Parquet sẵn sàng phân tích:
+- bỏ cột SBD (ẩn danh)
+- chuyển 11 cột điểm sang số
+- tính tổng điểm 10 khối: A00, A01, A02, B00, C00, C01, D01, D07, A0T, K01
+- thêm cột `so_mon` (số môn dự thi)
+
+-    ## Về bộ dữ liệu (của tác giả gốc) 
 Bộ dữ liệu điểm thi tốt nghiệp THPT năm 2026 của **1.200.202 thí sinh** toàn quốc (34 tỉnh/thành phố sau khi sắp xếp lại đơn vị hành chính).
 
 Dữ liệu thu thập từ trang tra cứu công khai của VietnamNet ngày 01/07/2026.
